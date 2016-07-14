@@ -37,15 +37,19 @@ public class WikiPhilosophy {
 		Element firstPara = paragraphs.get(0);
 		
 		Iterable<Node> iter = new WikiNodeIterable(firstPara);
+		//String html = firstPara.html();
+		//System.out.println(html);
 		for (Node node: iter) {
-			if (node instanceof TextNode) {
-				System.out.print(node);
+		 	if (node instanceof TextNode) {
+		 		System.out.println("NODE: ");
+		 		System.out.println(node);
+				
 			}
-        }
+         }
 
         // the following throws an exception so the test fails
         // until you update the code
         String msg = "Complete this lab by adding your code and removing this statement.";
-        throw new UnsupportedOperationException(msg);
+        //throw new UnsupportedOperationException(msg);
 	}
 }
